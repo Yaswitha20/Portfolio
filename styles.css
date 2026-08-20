@@ -166,6 +166,27 @@ img {
   font-size: 0.82rem;
   margin-bottom: 16px;
 }
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+.availability-badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.25);
+}
 .hero h1 {
   font-size: clamp(2.2rem, 5vw, 3.4rem);
   font-weight: 800;
@@ -371,6 +392,11 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+.impact-stat {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #34d399;
 }
 .project-card h3 {
   font-size: 1.1rem;
