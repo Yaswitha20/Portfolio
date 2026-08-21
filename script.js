@@ -13,7 +13,7 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 
 // Scroll-triggered fade-up reveal for cards and timeline items
 const revealTargets = document.querySelectorAll(
-  ".about-card, .skill-card, .timeline-item, .project-card, .cert-card, .contact-card",
+  ".about-visual, .about-card, .skill-card, .timeline-item, .project-card, .cert-card, .contact-card",
 );
 revealTargets.forEach((el) => el.classList.add("reveal"));
 
