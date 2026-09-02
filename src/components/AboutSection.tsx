@@ -30,10 +30,10 @@ const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="relative w-screen min-h-screen bg-black text-[#E8DFD8] font-body py-24 lg:py-32 px-6 sm:px-12 lg:px-20 overflow-hidden flex items-center"
+      className="relative w-screen min-h-screen bg-white text-[#0F172A] font-body py-24 lg:py-32 px-6 sm:px-12 lg:px-20 overflow-hidden flex items-center"
     >
       <motion.div
-        animate={{ scale: [1, 1.2, 1], opacity: [0.08, 0.16, 0.08] }}
+        animate={{ scale: [1, 1.2, 1], opacity: [0.06, 0.12, 0.06] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-1/4 left-1/6 w-[32rem] h-[32rem] bg-gold rounded-full blur-[160px] pointer-events-none"
       />
@@ -65,10 +65,10 @@ const AboutSection: React.FC = () => {
               className="relative mb-6 select-none"
             >
               <h2 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.2rem] tracking-tight uppercase leading-[0.88]">
-                <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_10px_rgba(0,0,0,0.85)]">
+                <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#334155] drop-shadow-[0_2px_6px_rgba(15,23,42,0.12)]">
                   I DON&apos;T JUST BUILD MODELS.
                 </span>
-                <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.3)]">
+                <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#3B82F6] via-[#2563EB] to-[#1D4ED8] drop-shadow-[0_4px_16px_rgba(37,99,235,0.2)]">
                   I ENGINEER INTELLIGENCE.
                 </span>
               </h2>
@@ -76,7 +76,7 @@ const AboutSection: React.FC = () => {
 
             <motion.p
               variants={fadeUpVariants}
-              className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#B3A497] leading-[1.85] tracking-wide mb-6 max-w-xl"
+              className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#475569] leading-[1.85] tracking-wide mb-6 max-w-xl"
             >
               AI/ML Engineer with 4+ years of experience building
               production-grade AI systems across banking, healthcare, and
@@ -86,7 +86,7 @@ const AboutSection: React.FC = () => {
             </motion.p>
             <motion.p
               variants={fadeUpVariants}
-              className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#B3A497] leading-[1.85] tracking-wide mb-10 max-w-xl"
+              className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#475569] leading-[1.85] tracking-wide mb-10 max-w-xl"
             >
               My work focuses on turning complex AI capabilities into reliable
               systems that improve automation, information retrieval,
@@ -106,7 +106,7 @@ const AboutSection: React.FC = () => {
               ].map((tag) => (
                 <span
                   key={tag}
-                  className="px-3.5 py-1.5 text-[10.5px] font-medium tracking-[0.14em] uppercase rounded-sm border border-bronze/35 bg-[#171310] text-[#E8D7C5]"
+                  className="px-3.5 py-1.5 text-[10.5px] font-medium tracking-[0.14em] uppercase rounded-sm border border-bronze/30 bg-[#EFF6FF] text-[#1D4ED8]"
                 >
                   {tag}
                 </span>
@@ -124,12 +124,12 @@ const AboutSection: React.FC = () => {
           >
             <motion.div
               variants={fadeUpVariants}
-              className="relative w-44 h-44 rounded-full flex items-center justify-center mb-8 border border-gold/50 shadow-[0_0_40px_rgba(212,175,55,0.25)]"
+              className="relative w-44 h-44 rounded-full flex items-center justify-center mb-8 border border-gold/50 shadow-[0_0_40px_rgba(37,99,235,0.2)]"
               style={{
-                background: "linear-gradient(135deg, #543B1A, #D4AF37)",
+                background: "linear-gradient(135deg, #1D4ED8, #38BDF8)",
               }}
             >
-              <span className="font-display text-5xl text-black">YR</span>
+              <span className="font-display text-5xl text-white">YR</span>
             </motion.div>
 
             <motion.div
@@ -138,10 +138,10 @@ const AboutSection: React.FC = () => {
             >
               {stats.map((stat) => (
                 <div key={stat.label} className="flex flex-col">
-                  <span className="font-display text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight">
+                  <span className="font-display text-3xl sm:text-4xl font-light text-[#0F172A] tracking-tight">
                     {stat.value}
                   </span>
-                  <span className="text-[10px] font-medium tracking-[0.18em] uppercase text-[#A8988B] mt-1">
+                  <span className="text-[10px] font-medium tracking-[0.18em] uppercase text-[#64748B] mt-1">
                     {stat.label}
                   </span>
                 </div>

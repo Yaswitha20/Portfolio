@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        gold: "#D4AF37",
-        bronze: "#8C6D4F",
-        ink: "#0A0806",
+        gold: "#2563EB",
+        bronze: "#0EA5E9",
+        ink: "#F8FAFC",
       },
       fontFamily: {
         display: ["'Bebas Neue'", "sans-serif"],

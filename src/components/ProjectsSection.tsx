@@ -60,7 +60,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <section
       id="work"
-      className="relative w-full bg-black text-[#E8DFD8] font-body pt-20 pb-32 px-6 sm:px-12 lg:px-20"
+      className="relative w-full bg-white text-[#0F172A] font-body pt-20 pb-32 px-6 sm:px-12 lg:px-20"
     >
       <div className="absolute top-1/4 left-1/3 w-[36rem] h-[36rem] bg-gold/5 rounded-full blur-[180px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-bronze/5 rounded-full blur-[170px] pointer-events-none" />
@@ -87,14 +87,14 @@ const ProjectsSection: React.FC = () => {
           className="flex flex-col md:flex-row md:items-end justify-between mb-16"
         >
           <h2 className="font-display text-5xl sm:text-6xl md:text-7xl tracking-tight uppercase leading-[0.9]">
-            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-[#D5CBC0] to-[#605448]">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#334155]">
               SYSTEMS I&apos;VE
             </span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A]">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#3B82F6] via-[#2563EB] to-[#1D4ED8]">
               ENGINEERED.
             </span>
           </h2>
-          <p className="text-xs sm:text-sm font-light text-[#A8988B] max-w-sm mt-4 md:mt-0 leading-relaxed">
+          <p className="text-xs sm:text-sm font-light text-[#475569] max-w-sm mt-4 md:mt-0 leading-relaxed">
             Three production AI/ML systems spanning agentic RAG, explainable
             healthcare ML, and generative conversational AI.
           </p>
@@ -108,7 +108,7 @@ const ProjectsSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.7, delay: idx * 0.06 }}
-              className="relative w-full rounded-2xl border border-bronze/50 bg-[#0E0C0A] p-8 sm:p-12 shadow-[0_25px_70px_rgba(0,0,0,0.98)] group overflow-hidden transition-colors duration-500 hover:border-gold"
+              className="relative w-full rounded-2xl border border-bronze/30 bg-white p-8 sm:p-12 shadow-[0_20px_50px_rgba(15,23,42,0.08)] group overflow-hidden transition-colors duration-500 hover:border-gold"
             >
               <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-gold/80 to-transparent" />
 
@@ -119,22 +119,22 @@ const ProjectsSection: React.FC = () => {
                       <span className="text-xs font-mono font-bold text-gold">
                         {project.number} //
                       </span>
-                      <span className="text-[10.5px] font-mono tracking-[0.25em] uppercase text-[#A8988B]">
+                      <span className="text-[10.5px] font-mono tracking-[0.25em] uppercase text-[#475569]">
                         {project.category}
                       </span>
                     </div>
-                    <h3 className="font-display text-4xl sm:text-5xl font-normal tracking-tight text-white mb-4 group-hover:text-[#F7E7C4] transition-colors uppercase leading-[0.9]">
+                    <h3 className="font-display text-4xl sm:text-5xl font-normal tracking-tight text-[#0F172A] mb-4 group-hover:text-gold transition-colors uppercase leading-[0.9]">
                       {project.title}
                     </h3>
-                    <p className="text-xs sm:text-sm md:text-[14px] font-light text-[#BDB0A4] leading-[1.85] tracking-wide mb-8 max-w-2xl">
+                    <p className="text-xs sm:text-sm md:text-[14px] font-light text-[#475569] leading-[1.85] tracking-wide mb-8 max-w-2xl">
                       {project.description}
                     </p>
                   </div>
-                  <div className="flex flex-wrap gap-2 pt-6 border-t border-bronze/25">
+                  <div className="flex flex-wrap gap-2 pt-6 border-t border-bronze/20">
                     {project.tech.map((t) => (
                       <span
                         key={t}
-                        className="px-3 py-1 text-[10px] font-medium tracking-[0.16em] uppercase rounded-sm border border-bronze/40 bg-[#16120E] text-[#E8D7C5] group-hover:border-gold/50 transition-all duration-300"
+                        className="px-3 py-1 text-[10px] font-medium tracking-[0.16em] uppercase rounded-sm border border-bronze/30 bg-[#EFF6FF] text-[#1D4ED8] group-hover:border-gold/50 transition-all duration-300"
                       >
                         {t}
                       </span>
@@ -149,10 +149,10 @@ const ProjectsSection: React.FC = () => {
                         key={m.label}
                         className="border-l-2 border-gold/50 pl-4"
                       >
-                        <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-1">
+                        <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#64748B] mb-1">
                           {m.label}
                         </p>
-                        <p className="text-sm font-medium text-white">
+                        <p className="text-sm font-medium text-[#0F172A]">
                           {m.value}
                         </p>
                       </div>
@@ -162,7 +162,7 @@ const ProjectsSection: React.FC = () => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center space-x-3 px-6 py-3.5 border border-bronze bg-[#16120E] hover:border-gold hover:bg-gold text-[#EAD8C7] hover:text-black text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300"
+                    className="inline-flex items-center justify-center space-x-3 px-6 py-3.5 border border-gold bg-gold hover:bg-[#1D4ED8] hover:border-[#1D4ED8] text-white text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300"
                   >
                     <span>VIEW ON GITHUB</span>
                     <span className="text-xs">↗</span>

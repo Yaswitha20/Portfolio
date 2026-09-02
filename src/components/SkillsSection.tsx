@@ -102,7 +102,7 @@ const SkillsSection: React.FC = () => {
   return (
     <section
       id="skills"
-      className="relative w-screen bg-black text-[#E8DFD8] font-body pt-8 pb-24 px-6 sm:px-12 lg:px-20 overflow-hidden flex flex-col justify-center"
+      className="relative w-screen bg-[#F8FAFC] text-[#0F172A] font-body pt-8 pb-24 px-6 sm:px-12 lg:px-20 overflow-hidden flex flex-col justify-center"
     >
       <div className="absolute top-1/3 left-1/4 w-[34rem] h-[34rem] bg-gold/5 rounded-full blur-[170px] pointer-events-none" />
       <div className="absolute bottom-10 right-1/4 w-[28rem] h-[28rem] bg-bronze/5 rounded-full blur-[160px] pointer-events-none" />
@@ -129,10 +129,10 @@ const SkillsSection: React.FC = () => {
           className="mb-10"
         >
           <h2 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight uppercase leading-[0.85] select-none">
-            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#334155] drop-shadow-[0_2px_6px_rgba(15,23,42,0.12)]">
               ARCHITECTURAL MASTERY.
             </span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#3B82F6] via-[#2563EB] to-[#1D4ED8] drop-shadow-[0_4px_16px_rgba(37,99,235,0.2)]">
               PRECISION APPLIED.
             </span>
           </h2>
@@ -149,27 +149,27 @@ const SkillsSection: React.FC = () => {
             <motion.div
               key={block.title}
               variants={cardVariants}
-              className={`group relative rounded-sm border border-bronze/30 bg-[#100D0A] p-7 hover:border-gold/50 transition-all duration-500 ${block.colSpan}`}
+              className={`group relative rounded-sm border border-bronze/20 bg-white shadow-sm p-7 hover:border-gold/50 hover:shadow-md transition-all duration-500 ${block.colSpan}`}
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-gold">
                   {block.badge}
                 </span>
-                <span className="text-[10px] font-mono tracking-[0.16em] uppercase text-[#8C6D4F]">
+                <span className="text-[10px] font-mono tracking-[0.16em] uppercase text-[#64748B]">
                   {block.stat}
                 </span>
               </div>
-              <h3 className="font-display text-2xl sm:text-3xl uppercase text-white mb-3 tracking-tight">
+              <h3 className="font-display text-2xl sm:text-3xl uppercase text-[#0F172A] mb-3 tracking-tight">
                 {block.title}
               </h3>
-              <p className="text-xs font-light text-[#A8988B] leading-relaxed mb-5">
+              <p className="text-xs font-light text-[#475569] leading-relaxed mb-5">
                 {block.description}
               </p>
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-bronze/20">
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-bronze/15">
                 {block.items.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3.5 py-1.5 text-[10.5px] font-medium tracking-[0.16em] uppercase rounded-sm border border-bronze/35 bg-[#171310] text-[#E8D7C5] group-hover:border-gold/50 group-hover:bg-[#1F1914] group-hover:text-white transition-all duration-300"
+                    className="px-3.5 py-1.5 text-[10.5px] font-medium tracking-[0.16em] uppercase rounded-sm border border-bronze/25 bg-[#EFF6FF] text-[#1D4ED8] group-hover:border-gold/60 group-hover:bg-gold group-hover:text-white transition-all duration-300"
                   >
                     {tech}
                   </span>

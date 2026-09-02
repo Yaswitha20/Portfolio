@@ -24,7 +24,7 @@ const ContactSection: React.FC = () => {
   return (
     <footer
       id="contact"
-      className="relative w-full bg-black text-[#E8DFD8] font-body pt-16 pb-16 px-6 sm:px-12 lg:px-20 overflow-hidden"
+      className="relative w-full bg-white text-[#0F172A] font-body pt-16 pb-16 px-6 sm:px-12 lg:px-20 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -51,16 +51,16 @@ const ContactSection: React.FC = () => {
                 className="mb-8"
               >
                 <h2 className="font-display text-5xl sm:text-6xl md:text-7xl tracking-tight uppercase leading-[0.85] select-none">
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-[#D5CBC0] to-[#605448]">
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#334155]">
                     LET&apos;S BUILD
                   </span>
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A]">
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#3B82F6] via-[#2563EB] to-[#1D4ED8]">
                     SOMETHING NEXT.
                   </span>
                 </h2>
               </motion.div>
 
-              <p className="text-xs sm:text-[13px] font-light text-[#A8988B] leading-relaxed max-w-md mb-8">
+              <p className="text-xs sm:text-[13px] font-light text-[#475569] leading-relaxed max-w-md mb-8">
                 Open to opportunities in AI/ML engineering, LLM systems, and
                 applied research. Reach out via any channel below.
               </p>
@@ -68,13 +68,13 @@ const ContactSection: React.FC = () => {
               <div className="space-y-3 text-xs sm:text-sm">
                 <a
                   href="mailto:yaswirami29@gmail.com"
-                  className="block text-[#EAD8C7] hover:text-gold transition-colors"
+                  className="block text-[#0F172A] hover:text-gold transition-colors"
                 >
                   yaswirami29@gmail.com
                 </a>
                 <a
                   href="tel:+12149975560"
-                  className="block text-[#EAD8C7] hover:text-gold transition-colors"
+                  className="block text-[#0F172A] hover:text-gold transition-colors"
                 >
                   +1 214 997 5560
                 </a>
@@ -82,7 +82,7 @@ const ContactSection: React.FC = () => {
                   href="https://linkedin.com/in/yramisetty"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-[#EAD8C7] hover:text-gold transition-colors"
+                  className="block text-[#0F172A] hover:text-gold transition-colors"
                 >
                   linkedin.com/in/yramisetty
                 </a>
@@ -90,7 +90,7 @@ const ContactSection: React.FC = () => {
                   href="https://github.com/Yaswitha20"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-[#EAD8C7] hover:text-gold transition-colors"
+                  className="block text-[#0F172A] hover:text-gold transition-colors"
                 >
                   github.com/Yaswitha20
                 </a>
@@ -103,7 +103,7 @@ const ContactSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-7 relative w-full rounded-sm border border-bronze/40 bg-[#0A0806] p-8 sm:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.9)] overflow-hidden"
+            className="lg:col-span-7 relative w-full rounded-sm border border-bronze/30 bg-[#F8FAFC] p-8 sm:p-10 shadow-[0_20px_50px_rgba(15,23,42,0.08)] overflow-hidden"
           >
             <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-gold/70 to-transparent" />
 
@@ -112,10 +112,10 @@ const ContactSection: React.FC = () => {
                 <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gold text-gold text-sm">
                   ✓
                 </div>
-                <h3 className="font-display text-3xl text-white uppercase">
+                <h3 className="font-display text-3xl text-[#0F172A] uppercase">
                   MESSAGE READY
                 </h3>
-                <p className="text-xs text-[#A8988B] font-light">
+                <p className="text-xs text-[#475569] font-light">
                   Your email client should now be open to send the message.
                 </p>
               </div>
@@ -133,7 +133,7 @@ const ContactSection: React.FC = () => {
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
-                      className="w-full bg-[#120F0C] border border-bronze/30 focus:border-gold text-xs text-white placeholder-bronze/50 p-4 outline-none rounded-sm transition-colors"
+                      className="w-full bg-white border border-bronze/30 focus:border-gold text-xs text-[#0F172A] placeholder-bronze/50 p-4 outline-none rounded-sm transition-colors"
                     />
                   </div>
                   <div>
@@ -147,7 +147,7 @@ const ContactSection: React.FC = () => {
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full bg-[#120F0C] border border-bronze/30 focus:border-gold text-xs text-white placeholder-bronze/50 p-4 outline-none rounded-sm transition-colors"
+                      className="w-full bg-white border border-bronze/30 focus:border-gold text-xs text-[#0F172A] placeholder-bronze/50 p-4 outline-none rounded-sm transition-colors"
                     />
                   </div>
                 </div>
@@ -162,12 +162,12 @@ const ContactSection: React.FC = () => {
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    className="w-full bg-[#120F0C] border border-bronze/30 focus:border-gold text-xs text-white placeholder-bronze/50 p-4 outline-none rounded-sm transition-colors resize-none"
+                    className="w-full bg-white border border-bronze/30 focus:border-gold text-xs text-[#0F172A] placeholder-bronze/50 p-4 outline-none rounded-sm transition-colors resize-none"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-3.5 border border-bronze/50 bg-[#14100D] hover:border-gold hover:bg-[#1A1510] text-[#E8DFD8] hover:text-[#F7E7C4] text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300"
+                  className="w-full py-3.5 border border-gold bg-gold hover:bg-[#1D4ED8] hover:border-[#1D4ED8] text-white text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300"
                 >
                   SEND MESSAGE ↗
                 </button>

@@ -57,7 +57,7 @@ const ExperienceSection: React.FC = () => {
     <section
       id="experience"
       ref={containerRef}
-      className="relative w-full bg-black text-[#E8DFD8] font-body py-24 lg:py-32 px-6 sm:px-12 lg:px-20"
+      className="relative w-full bg-white text-[#0F172A] font-body py-24 lg:py-32 px-6 sm:px-12 lg:px-20"
     >
       <div className="max-w-5xl mx-auto w-full relative z-10">
         <motion.div
@@ -81,10 +81,10 @@ const ExperienceSection: React.FC = () => {
           className="mb-16"
         >
           <h2 className="font-display text-5xl sm:text-6xl md:text-7xl tracking-tight uppercase leading-[0.85] select-none">
-            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-[#D5CBC0] to-[#605448]">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#334155]">
               CAREER
             </span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A]">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#3B82F6] via-[#2563EB] to-[#1D4ED8]">
               MILESTONES.
             </span>
           </h2>
@@ -94,7 +94,7 @@ const ExperienceSection: React.FC = () => {
           <div className="absolute left-[19px] md:left-[140px] top-4 bottom-8 w-[1px] bg-bronze/20" />
           <motion.div
             style={{ height: lineHeight }}
-            className="absolute left-[19px] md:left-[140px] top-4 w-[2px] bg-gradient-to-b from-gold via-[#C99E5D] to-bronze/10 shadow-[0_0_10px_#D4AF37] origin-top"
+            className="absolute left-[19px] md:left-[140px] top-4 w-[2px] bg-gradient-to-b from-gold via-bronze to-bronze/10 shadow-[0_0_10px_#2563EB] origin-top"
           />
 
           <div className="space-y-12">
@@ -114,20 +114,20 @@ const ExperienceSection: React.FC = () => {
                 </div>
 
                 <div className="absolute left-[19px] md:left-[140px] top-1.5 -translate-x-1/2 flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-gold shadow-[0_0_10px_#D4AF37]" />
+                  <div className="w-3 h-3 rounded-full bg-gold shadow-[0_0_10px_#2563EB]" />
                 </div>
 
                 <div className="pl-10 md:pl-10">
                   <span className="md:hidden block text-[10px] font-mono tracking-[0.2em] text-bronze mb-1">
                     {stop.year}
                   </span>
-                  <h3 className="font-display text-2xl sm:text-3xl uppercase text-white tracking-tight mb-1">
+                  <h3 className="font-display text-2xl sm:text-3xl uppercase text-[#0F172A] tracking-tight mb-1">
                     {stop.title}
                   </h3>
                   <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-gold mb-3">
                     {stop.organization}
                   </p>
-                  <p className="text-xs sm:text-sm font-light text-[#A8988B] leading-relaxed max-w-xl">
+                  <p className="text-xs sm:text-sm font-light text-[#475569] leading-relaxed max-w-xl">
                     {stop.description}
                   </p>
                 </div>
