@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
-import AgentsScene from "./scene/AgentsScene";
 import aiHumanHand from "../assets/ai-human-hand.png";
 
 const containerVariants: Variants = {
@@ -35,21 +34,19 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative w-screen min-h-screen overflow-hidden bg-white font-body">
-      {/* AI x Human illustration layer */}
-      <div className="absolute inset-0 flex justify-end pointer-events-none">
+      {/* AI x Human illustration, full-section background */}
+      <div className="absolute inset-0">
         <img
           src={aiHumanHand}
           alt="AI and human hand reaching toward each other"
-          className="h-full w-auto max-w-none object-cover object-center opacity-90"
+          className="w-full h-full object-cover object-center"
         />
       </div>
+      <div className="absolute inset-0 bg-white/78 pointer-events-none" />
 
-      {/* AI/ML multi-agent 3D scene layer */}
-      <AgentsScene />
-
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,rgba(255,255,255,0.55)_65%,rgba(255,255,255,0.92)_100%)] pointer-events-none z-[6]" />
-      <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-white via-white/90 to-transparent pointer-events-none" />
-      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white via-white/50 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_10%,rgba(255,255,255,0.35)_65%,rgba(255,255,255,0.7)_100%)] pointer-events-none z-[6]" />
+      <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-white/60 via-white/30 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white/60 via-white/20 to-transparent pointer-events-none" />
 
       {/* Ambient blue glows */}
       <motion.div
