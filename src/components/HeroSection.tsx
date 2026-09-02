@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import heroPortrait from "../assets/hero-portrait.png";
-import AbstractScene from "./scene/AbstractScene";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -35,9 +34,6 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative w-screen min-h-screen overflow-hidden bg-black font-body">
-      {/* Abstract 3D scene layer */}
-      <AbstractScene />
-
       {/* Portrait background layer */}
       <div className="absolute inset-0 flex justify-end pointer-events-none">
         <img
