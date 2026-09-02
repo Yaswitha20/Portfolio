@@ -37,36 +37,7 @@ const HeroSection: React.FC = () => {
       {/* Abstract 3D scene layer */}
       <AbstractScene />
 
-      {/* Anime-style walking avatar, centered */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[5]">
-        <motion.div
-          animate={{ x: [-70, 70, -70], scaleX: [1, 1, -1, -1, 1] }}
-          transition={{
-            duration: 6,
-            repeat: Infinity,
-            ease: "easeInOut",
-            times: [0, 0.48, 0.5, 0.98, 1],
-          }}
-          className="relative flex flex-col items-center"
-        >
-          <motion.span
-            animate={{ y: [0, -18, 0, -18, 0] }}
-            transition={{ duration: 0.9, repeat: Infinity, ease: "easeInOut" }}
-            className="block text-[8rem] sm:text-[10rem] lg:text-[11rem] leading-none drop-shadow-[0_0_45px_rgba(212,175,55,0.4)] select-none"
-          >
-            🚶&zwj;♀️
-          </motion.span>
-          <motion.div
-            animate={{
-              scaleX: [1, 0.6, 1, 0.6, 1],
-              opacity: [0.5, 0.25, 0.5, 0.25, 0.5],
-            }}
-            transition={{ duration: 0.9, repeat: Infinity, ease: "easeInOut" }}
-            className="w-24 h-4 rounded-full bg-gold/40 blur-md -mt-2"
-          />
-        </motion.div>
-      </div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,rgba(0,0,0,0.55)_60%,rgba(0,0,0,0.9)_100%)] pointer-events-none z-[6]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,rgba(0,0,0,0.4)_65%,rgba(0,0,0,0.85)_100%)] pointer-events-none z-[6]" />
       <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-black via-black/85 to-transparent pointer-events-none" />
       <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none" />
 
