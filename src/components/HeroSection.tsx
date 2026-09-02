@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import AgentsScene from "./scene/AgentsScene";
+import aiHumanHand from "../assets/ai-human-hand.png";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -34,6 +35,15 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative w-screen min-h-screen overflow-hidden bg-white font-body">
+      {/* AI x Human illustration layer */}
+      <div className="absolute inset-0 flex justify-end pointer-events-none">
+        <img
+          src={aiHumanHand}
+          alt="AI and human hand reaching toward each other"
+          className="h-full w-auto max-w-none object-cover object-center opacity-90"
+        />
+      </div>
+
       {/* AI/ML multi-agent 3D scene layer */}
       <AgentsScene />
 
