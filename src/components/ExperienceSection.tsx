@@ -6,7 +6,8 @@ interface RouteStop {
   year: string;
   title: string;
   organization: string;
-  description: string;
+  metrics: string[];
+  achievements: string[];
 }
 
 const journey: RouteStop[] = [
@@ -15,32 +16,48 @@ const journey: RouteStop[] = [
     year: "JAN 2026 – PRESENT",
     title: "AI / MACHINE LEARNING ENGINEER",
     organization: "COMERICA, DALLAS, TX",
-    description:
-      "Architected enterprise RAG and multi-agent platforms across 500K+ financial documents; fine-tuned LLMs with LoRA/PEFT, cutting retrieval time by 60%.",
+    metrics: ["20M+ transactions", "10TB+ data", "500K+ documents"],
+    achievements: [
+      "Architected enterprise RAG platforms across 500K+ financial documents, cutting retrieval time by 60%.",
+      "Fine-tuned domain LLMs with LoRA/PEFT, improving document classification accuracy by 22%.",
+      "Deployed multi-agent AI systems on AWS SageMaker/EC2/Lambda, eliminating 150+ manual hours weekly.",
+    ],
   },
   {
     id: "02",
     year: "APR 2025 – DEC 2025",
     title: "MACHINE LEARNING ENGINEER",
     organization: "DELL, ROUND ROCK, TX",
-    description:
-      "Built GenAI/RAG solutions and LangGraph multi-agent workflows on AWS and GCP Vertex AI, deploying 20+ ML and GenAI applications.",
+    metrics: ["20+ ML/GenAI apps", "15TB+ data", "250K+ documents"],
+    achievements: [
+      "Built GenAI/RAG solutions with citation-grounded search across 250K+ documents, cutting retrieval time by 60%.",
+      "Designed LangGraph multi-agent workflows for support automation, reducing resolution effort by 40%.",
+      "Deployed 20+ ML/GenAI applications on AWS and GCP Vertex AI, cutting provisioning time by 40%.",
+    ],
   },
   {
     id: "03",
     year: "APR 2023 – JUN 2024",
     title: "DATA SCIENTIST",
     organization: "SOUTH INDIAN BANK, HYDERABAD",
-    description:
-      "Analyzed 50M+ transaction records for fraud detection and loan default prediction, improving accuracy by 18% with NLP-driven compliance analytics.",
+    metrics: ["50M+ records", "+18% accuracy", "+15% conversion"],
+    achievements: [
+      "Built fraud detection and loan default models across 50M+ transaction records, improving accuracy by 18%.",
+      "Increased campaign conversion rates by 15% through customer segmentation models.",
+      "Automated compliance analytics with BERT/spaCy NLP, cutting manual review effort by 45%.",
+    ],
   },
   {
     id: "04",
     year: "OCT 2021 – MAR 2023",
     title: "DATA SCIENTIST",
     organization: "GEBBS HEALTHCARE SOLUTIONS, HYDERABAD",
-    description:
-      "Delivered predictive analytics across 20M+ EHR and claims records, and HIPAA-compliant dashboards across 15+ healthcare facilities.",
+    metrics: ["20M+ EHR records", "15+ facilities", "+15% accuracy"],
+    achievements: [
+      "Delivered predictive analytics across 20M+ EHR and claims records, improving risk prediction by 15%.",
+      "Reduced claim processing errors by 20% through RCM and denial-prevention analytics platforms.",
+      "Shipped HIPAA-compliant dashboards across 15+ healthcare facilities for clinical and financial teams.",
+    ],
   },
 ];
 
@@ -127,9 +144,26 @@ const ExperienceSection: React.FC = () => {
                   <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-gold mb-3">
                     {stop.organization}
                   </p>
-                  <p className="text-xs sm:text-sm font-light text-[#475569] leading-relaxed max-w-xl">
-                    {stop.description}
-                  </p>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1 mb-4">
+                    {stop.metrics.map((m) => (
+                      <span
+                        key={m}
+                        className="text-[11px] sm:text-xs font-semibold text-[#1D4ED8]"
+                      >
+                        {m}
+                      </span>
+                    ))}
+                  </div>
+                  <ul className="space-y-1.5 max-w-xl">
+                    {stop.achievements.map((a) => (
+                      <li
+                        key={a}
+                        className="text-xs sm:text-sm font-light text-[#475569] leading-relaxed pl-4 relative before:content-['→'] before:absolute before:left-0 before:text-gold"
+                      >
+                        {a}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
             ))}

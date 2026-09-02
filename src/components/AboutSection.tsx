@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
+import { useRef, useState } from "react";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -20,11 +21,48 @@ const fadeUpVariants: Variants = {
 };
 
 const stats = [
-  { value: "4+ Years", label: "AI/ML Engineering Experience" },
-  { value: "750K+", label: "Documents Indexed in RAG Platforms" },
-  { value: "3 Clouds", label: "AWS, Azure & GCP Deployments" },
-  { value: "5 Certs", label: "Google Cloud, AWS, IBM & DeepLearning.AI" },
+  { target: 4, suffix: "+ Years", label: "AI/ML Engineering Experience" },
+  { target: 750, suffix: "K+", label: "Documents Indexed in RAG Platforms" },
+  { target: 3, suffix: " Clouds", label: "AWS, Azure & GCP Deployments" },
+  {
+    target: 5,
+    suffix: " Certs",
+    label: "Google Cloud, AWS, IBM & DeepLearning.AI",
+  },
 ];
+
+const Counter: React.FC<{ target: number; suffix: string }> = ({
+  target,
+  suffix,
+}) => {
+  const [value, setValue] = useState(target);
+  const animated = useRef(false);
+
+  const runCountUp = () => {
+    if (animated.current) return;
+    animated.current = true;
+    const duration = 1200;
+    const start = performance.now();
+    const tick = (now: number) => {
+      const progress = Math.min((now - start) / duration, 1);
+      setValue(Math.round(progress * target));
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+
+  return (
+    <motion.span
+      data-target={target}
+      onViewportEnter={runCountUp}
+      viewport={{ once: true, margin: "-40px" }}
+      className="font-display text-3xl sm:text-4xl font-light text-[#0F172A] tracking-tight"
+    >
+      {value}
+      {suffix}
+    </motion.span>
+  );
+};
 
 const AboutSection: React.FC = () => {
   return (
@@ -138,9 +176,7 @@ const AboutSection: React.FC = () => {
             >
               {stats.map((stat) => (
                 <div key={stat.label} className="flex flex-col">
-                  <span className="font-display text-3xl sm:text-4xl font-light text-[#0F172A] tracking-tight">
-                    {stat.value}
-                  </span>
+                  <Counter target={stat.target} suffix={stat.suffix} />
                   <span className="text-[10px] font-medium tracking-[0.18em] uppercase text-[#64748B] mt-1">
                     {stat.label}
                   </span>

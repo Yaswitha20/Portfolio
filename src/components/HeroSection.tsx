@@ -121,9 +121,8 @@ const HeroSection: React.FC = () => {
 
             <motion.div variants={fadeUpVariants} className="mb-4">
               <p className="text-[10px] sm:text-[11px] md:text-xs font-normal tracking-[0.28em] uppercase text-[#475569]">
-                AI/ML ENGINEER <span className="text-bronze mx-1">•</span> LLM
-                &amp; RAG ARCHITECT <span className="text-bronze mx-1">•</span>{" "}
-                DATA SCIENTIST
+                AI/ML ENGINEER <span className="text-bronze mx-1">·</span>{" "}
+                GENERATIVE AI &amp; AGENTIC SYSTEMS
               </p>
             </motion.div>
 
@@ -132,9 +131,9 @@ const HeroSection: React.FC = () => {
               className="text-xs sm:text-sm md:text-[13.5px] font-light text-[#475569] leading-[1.8] tracking-wide max-w-lg mb-8"
             >
               <p>
-                Building production-grade RAG platforms, multi-agent systems,
-                and MLOps pipelines that turn AI research into reliable,
-                scalable products across banking, healthcare, and enterprise.
+                Building production RAG platforms, agentic AI workflows, and
+                MLOps-driven ML systems, deployed and scaled across AWS, Azure,
+                and GCP for banking, healthcare, and enterprise.
               </p>
             </motion.div>
 
