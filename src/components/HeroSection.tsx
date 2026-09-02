@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
+import heroPortrait from "../assets/hero-portrait.png";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -33,16 +34,27 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative w-screen min-h-screen overflow-hidden bg-black font-body">
+      {/* Portrait background layer */}
+      <div className="absolute inset-0 flex justify-end pointer-events-none">
+        <img
+          src={heroPortrait}
+          alt="Yaswitha Ramisetty"
+          className="h-full w-auto max-w-none object-cover object-top origin-right opacity-90"
+        />
+      </div>
+      <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-black via-black/85 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none" />
+
       {/* Ambient cinematic glows */}
       <motion.div
         animate={{ scale: [1, 1.15, 1], opacity: [0.12, 0.22, 0.12] }}
         transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-[-10%] right-[-10%] w-[42rem] h-[42rem] bg-gold rounded-full blur-[180px] pointer-events-none"
+        className="absolute top-[-10%] right-[-10%] w-[42rem] h-[42rem] bg-gold rounded-full blur-[180px] pointer-events-none mix-blend-screen"
       />
       <motion.div
         animate={{ scale: [1.15, 1, 1.15], opacity: [0.08, 0.16, 0.08] }}
         transition={{ duration: 11, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-[-15%] left-[-10%] w-[38rem] h-[38rem] bg-bronze rounded-full blur-[170px] pointer-events-none"
+        className="absolute bottom-[-15%] left-[-10%] w-[38rem] h-[38rem] bg-bronze rounded-full blur-[170px] pointer-events-none mix-blend-screen"
       />
 
       <div className="relative z-10 flex flex-col justify-between min-h-screen w-full px-6 sm:px-12 lg:px-16 pt-6 pb-10">
