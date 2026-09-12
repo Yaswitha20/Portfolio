@@ -61,11 +61,13 @@ const ContactSection: React.FC = () => {
               </motion.div>
 
               <p className="text-xs sm:text-[13px] font-light text-[#475569] leading-relaxed max-w-md mb-8">
-                Open to opportunities in AI/ML engineering, LLM systems, and
-                applied research. Reach out via any channel below.
+                Open to opportunities in AI/ML engineering, data science, LLM
+                systems, and applied research. Based in Dallas, TX — reach out via
+                any channel below.
               </p>
 
               <div className="space-y-3 text-xs sm:text-sm">
+                <span className="block text-[#64748B]">Dallas, TX 75234</span>
                 <a
                   href="mailto:yaswirami29@gmail.com"
                   className="block text-[#0F172A] hover:text-gold transition-colors"

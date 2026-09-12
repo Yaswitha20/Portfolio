@@ -8,6 +8,7 @@ const bentoCategories = [
     items: [
       "LangChain",
       "LangGraph",
+      "LlamaIndex",
       "OpenAI",
       "Hugging Face",
       "RAG",
@@ -38,6 +39,8 @@ const bentoCategories = [
       "Azure AI Search",
       "ChromaDB",
       "Hybrid Search",
+      "BM25",
+      "Cross-Encoder Reranking",
     ],
     description:
       "Dense and hybrid retrieval pipelines with reranking for citation-grounded search.",
@@ -56,7 +59,15 @@ const bentoCategories = [
   {
     title: "MLOPS & DEPLOYMENT",
     badge: "PRODUCTION",
-    items: ["MLflow", "Kubeflow", "Docker", "Kubernetes", "FastAPI", "CI/CD"],
+    items: [
+      "MLflow",
+      "Kubeflow",
+      "Weights & Biases",
+      "Docker",
+      "Kubernetes",
+      "FastAPI",
+      "CI/CD",
+    ],
     description:
       "End-to-end MLOps/LLMOps infrastructure with model registries and automated retraining.",
     stat: "35% FASTER DEPLOYS",

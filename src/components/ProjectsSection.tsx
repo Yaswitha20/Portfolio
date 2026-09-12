@@ -12,7 +12,7 @@ interface Project {
 
 const caseStudy = {
   title: "Agentic AI Document Intelligence Platform",
-  category: "RAG / LANGGRAPH / PRODUCTION AI",
+  category: "RAG / LANGGRAPH / PRODUCTION AI · DEC 2025 – APR 2026",
   githubUrl:
     "https://github.com/Yaswitha20/Agentic-AI-Document-Intelligence-Platform-using-RAG-and-LangGraph",
   problem:
@@ -55,29 +55,16 @@ const projects: Project[] = [
   {
     number: "01",
     title: "Explainable Multimodal Alzheimer's Disease Prediction",
-    category: "HEALTHCARE AI / XAI",
+    category: "HEALTHCARE AI / XAI · SEP 2024 – JAN 2025",
     description:
-      "End-to-end ML pipeline on the ADNI dataset integrating MRI, PET, CSF biomarkers, and clinical data. Random Forest/XGBoost ensembles with SHAP-based explainability for clinically interpretable predictions.",
+      "End-to-end ML pipeline on the ADNI dataset integrating MRI, PET, CSF biomarkers, APOE genotype, and clinical data. Built Random Forest, XGBoost, and ensemble models with stratified validation and SHAP-based explainability for clinically interpretable disease classification.",
     githubUrl:
       "https://github.com/Yaswitha20/Explainable-Multimodal-Alzheimer-s-Disease-Prediction-using-Ensemble-Machine-Learning-ADNI-",
     tech: ["Scikit-learn", "XGBoost", "SHAP", "Python"],
     metrics: [
-      { label: "MODELS", value: "RF + XGBoost" },
-      { label: "DATA TYPES", value: "4 Modalities Fused" },
+      { label: "MODELS", value: "RF + XGBoost Ensemble" },
+      { label: "DATA TYPES", value: "5 Modalities Fused" },
       { label: "EXPLAINABILITY", value: "SHAP-Based XAI" },
-    ],
-  },
-  {
-    number: "02",
-    title: "ChatGPT Clone",
-    category: "GENERATIVE AI",
-    description:
-      "Conversational AI application replicating core ChatGPT experience, exploring LLM orchestration, prompt handling, and real-time chat UX.",
-    githubUrl: "https://github.com/Yaswitha20/Chatgpt-Clone",
-    tech: ["Python", "LLMs", "Conversational AI"],
-    metrics: [
-      { label: "FOCUS", value: "LLM Orchestration" },
-      { label: "UX", value: "Real-Time Chat" },
     ],
   },
 ];
@@ -121,8 +108,8 @@ const ProjectsSection: React.FC = () => {
             </span>
           </h2>
           <p className="text-xs sm:text-sm font-light text-[#475569] max-w-sm mt-4 md:mt-0 leading-relaxed">
-            One deep-dive case study plus production AI/ML systems spanning
-            explainable healthcare ML and generative conversational AI.
+            Featured case study on a privacy-preserving RAG platform plus
+            explainable multimodal healthcare ML from the ADNI dataset.
           </p>
         </motion.div>
 

@@ -21,7 +21,7 @@ const fadeUpVariants: Variants = {
 };
 
 const stats = [
-  { target: 4, suffix: "+ Years", label: "AI/ML Engineering Experience" },
+  { target: 5, suffix: "+ Years", label: "AI/ML Engineering Experience" },
   { target: 750, suffix: "K+", label: "Documents Indexed in RAG Platforms" },
   { target: 3, suffix: " Clouds", label: "AWS, Azure & GCP Deployments" },
   {
@@ -29,6 +29,19 @@ const stats = [
     suffix: " Certs",
     label: "Google Cloud, AWS, IBM & DeepLearning.AI",
   },
+];
+
+const education = {
+  school: "Texas Tech University, Lubbock, TX",
+  degree: "Master of Science in Computer Science",
+};
+
+const certifications = [
+  "Google Cloud Professional Machine Learning Engineer",
+  "IBM AI Engineering Professional Certificate",
+  "DeepLearning.AI Deep Learning Specialization",
+  "AWS Certified Cloud Practitioner",
+  "Udemy AI Engineer Core Certification",
 ];
 
 const Counter: React.FC<{ target: number; suffix: string }> = ({
@@ -116,19 +129,21 @@ const AboutSection: React.FC = () => {
               variants={fadeUpVariants}
               className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#475569] leading-[1.85] tracking-wide mb-6 max-w-xl"
             >
-              AI/ML Engineer with 4+ years of experience building
-              production-grade AI systems across banking, healthcare, and
-              enterprise environments. I specialize in RAG, agentic AI, LLM
-              applications, and scalable ML platforms, from data and model
-              development through production deployment and MLOps.
+              AI/ML Engineer and Data Scientist with 5+ years of experience
+              building production-grade machine learning, Generative AI, RAG, and
+              multi-agent solutions across banking, healthcare, and enterprise
+              domains. Strong expertise in Python, LangChain, LangGraph, PyTorch,
+              FastAPI, vector databases, and AWS, Azure, and GCP.
             </motion.p>
             <motion.p
               variants={fadeUpVariants}
               className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#475569] leading-[1.85] tracking-wide mb-10 max-w-xl"
             >
-              My work focuses on turning complex AI capabilities into reliable
-              systems that improve automation, information retrieval,
-              decision-making, and operational efficiency.
+              Experienced in conversational AI, intelligent search, agentic
+              workflows, and real-time ML services that automate complex processes
+              and deliver measurable business impact. Proven ability to translate
+              AI research and prototypes into reliable, scalable enterprise
+              solutions.
             </motion.p>
 
             <motion.div
@@ -184,9 +199,41 @@ const AboutSection: React.FC = () => {
               ))}
             </motion.div>
 
+            <motion.div
+              variants={fadeUpVariants}
+              className="mt-8 w-full space-y-4 border-t border-bronze/25 pt-6"
+            >
+              <div>
+                <p className="text-[10px] font-medium tracking-[0.22em] uppercase text-gold mb-1">
+                  Education
+                </p>
+                <p className="text-xs font-light text-[#475569]">
+                  {education.school}
+                </p>
+                <p className="text-xs font-light text-[#64748B]">
+                  {education.degree}
+                </p>
+              </div>
+              <div>
+                <p className="text-[10px] font-medium tracking-[0.22em] uppercase text-gold mb-2">
+                  Certifications
+                </p>
+                <ul className="space-y-1">
+                  {certifications.map((cert) => (
+                    <li
+                      key={cert}
+                      className="text-[10px] font-light text-[#64748B] leading-relaxed pl-3 relative before:content-['→'] before:absolute before:left-0 before:text-gold"
+                    >
+                      {cert}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
+
             <motion.p
               variants={fadeUpVariants}
-              className="mt-8 text-[10px] font-medium tracking-[0.22em] uppercase text-gold text-center"
+              className="mt-6 text-[10px] font-medium tracking-[0.22em] uppercase text-gold text-center"
             >
               Banking &middot; Healthcare &middot; Enterprise
             </motion.p>
