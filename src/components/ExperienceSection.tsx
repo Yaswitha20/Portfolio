@@ -30,13 +30,13 @@ const journey: RouteStop[] = [
     year: "FEB 2025 – DEC 2025",
     title: "MACHINE LEARNING ENGINEER",
     organization: "DELL, ROUND ROCK, TX",
-    metrics: ["20+ ML/GenAI apps", "15TB+ data", "250K+ documents"],
+    metrics: ["15TB+ data", "3 clouds", "250K+ documents"],
     achievements: [
-      "Built forecasting and optimization models using XGBoost, LightGBM, PyTorch, and Reinforcement Learning, improving forecasting accuracy by 20%.",
-      "Engineered large-scale data pipelines with Spark, PySpark, Databricks, and Kafka processing 15TB+ enterprise data, reducing analytics time by 45%.",
+      "Built forecasting and optimization models using XGBoost, LightGBM, PyTorch, and Reinforcement Learning, improving forecasting accuracy by 20% across global supply-chain operations.",
+      "Ran production ML workloads across AWS SageMaker, GCP Vertex AI/BigQuery, and Azure Machine Learning, cutting model experimentation cycles by 30%.",
       "Architected GenAI/RAG solutions with citation-grounded search across 250K+ documents using LangChain, FAISS, and Pinecone, cutting retrieval time by 60%.",
       "Designed LangGraph multi-agent workflows for technical support automation, reducing manual resolution effort by 40% and response times by 35%.",
-      "Deployed 20+ ML and GenAI applications on AWS SageMaker and GCP Vertex AI with end-to-end MLOps/LLMOps frameworks.",
+      "Implemented end-to-end MLOps/LLMOps with MLflow, Kubeflow, Docker, Kubernetes, Jenkins, and GitHub Actions, reducing deployment cycles by 35%.",
     ],
   },
   {
