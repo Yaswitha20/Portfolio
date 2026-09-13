@@ -18,11 +18,11 @@ const journey: RouteStop[] = [
     organization: "COMERICA, DALLAS, TX",
     metrics: ["20M+ transactions", "10TB+ data", "500K+ documents"],
     achievements: [
-      "Engineered fraud detection, risk scoring, and financial forecasting models across 20M+ banking transactions, improving AUC-ROC by 15 points.",
-      "Architected Spark-based ETL pipelines processing 10TB+ financial data with PySpark, Airflow, PostgreSQL, and MongoDB, reducing processing time by 40%.",
-      "Architected enterprise RAG and GenAI platforms using LangChain, LangGraph, FAISS, and Pinecone across 500K+ documents, cutting retrieval time by 60%.",
-      "Deployed multi-agent AI systems and FastAPI inference services on AWS SageMaker, EC2, S3, and Lambda, eliminating 150+ manual hours weekly.",
-      "Established MLOps/LLMOps infrastructure with MLflow, Kubeflow, Docker, Kubernetes, and Responsible AI frameworks (SHAP/LIME), reducing deployment cycles by 35%.",
+      "Developed fraud detection, risk scoring, and financial forecasting models across 20M+ banking transactions, improving AUC-ROC by 15 points.",
+      "Built scalable ETL and feature engineering pipelines with Apache Spark, PySpark, Airflow, PostgreSQL, and MongoDB, reducing processing time by 40%.",
+      "Designed enterprise RAG applications with LangChain, LangGraph, FAISS, and Pinecone for grounded Q&A across 500K+ financial documents.",
+      "Built AI agents and multi-agent workflows with LangGraph, deployed via FastAPI on AWS SageMaker, EC2, S3, and Lambda.",
+      "Implemented production MLOps/LLMOps with MLflow, Kubeflow, Docker, Kubernetes, and SHAP/LIME for deployment reliability and governance.",
     ],
   },
   {

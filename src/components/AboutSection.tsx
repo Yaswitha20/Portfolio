@@ -130,20 +130,21 @@ const AboutSection: React.FC = () => {
               className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#475569] leading-[1.85] tracking-wide mb-6 max-w-xl"
             >
               AI/ML Engineer and Data Scientist with 5+ years of experience
-              building production-grade machine learning, Generative AI, RAG, and
-              multi-agent solutions across banking, healthcare, and enterprise
-              domains. Strong expertise in Python, LangChain, LangGraph, PyTorch,
-              FastAPI, vector databases, and AWS, Azure, and GCP.
+              designing, developing, and deploying production machine learning
+              and Generative AI solutions across banking, healthcare, and
+              enterprise environments. Hands-on experience building RAG
+              applications, AI agents, multi-agent workflows, predictive models,
+              and scalable ML pipelines with Python, PyTorch, LangChain,
+              LangGraph, FastAPI, and vector databases.
             </motion.p>
             <motion.p
               variants={fadeUpVariants}
               className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#475569] leading-[1.85] tracking-wide mb-10 max-w-xl"
             >
-              Experienced in conversational AI, intelligent search, agentic
-              workflows, and real-time ML services that automate complex processes
-              and deliver measurable business impact. Proven ability to translate
-              AI research and prototypes into reliable, scalable enterprise
-              solutions.
+              Experienced in LLM fine-tuning with PEFT/LoRA, semantic and hybrid
+              search, and model evaluation, with a strong background in
+              MLOps/LLMOps, Docker, Kubernetes, CI/CD, and cloud-native AI
+              services across AWS, Azure, and GCP.
             </motion.p>
 
             <motion.div
