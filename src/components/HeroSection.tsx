@@ -121,9 +121,9 @@ const HeroSection: React.FC = () => {
 
             <motion.div variants={fadeUpVariants} className="mb-4">
               <p className="text-[10px] sm:text-[11px] md:text-xs font-normal tracking-[0.28em] uppercase text-[#475569]">
-                AI/ML ENGINEER <span className="text-bronze mx-1">·</span>{" "}
-                DATA SCIENTIST <span className="text-bronze mx-1">·</span>{" "}
-                GENERATIVE AI &amp; AGENTIC SYSTEMS
+                AI/ML ENGINEER <span className="text-bronze mx-1">·</span> DATA
+                SCIENTIST <span className="text-bronze mx-1">·</span> GENERATIVE
+                AI &amp; AGENTIC SYSTEMS
               </p>
             </motion.div>
 
@@ -133,9 +133,9 @@ const HeroSection: React.FC = () => {
             >
               <p>
                 5+ years building production-grade ML, Generative AI, RAG, and
-                multi-agent solutions across banking, healthcare, and enterprise.
-                From LLM fine-tuning and vector search to MLOps deployment on
-                AWS, Azure, and GCP.
+                multi-agent solutions across banking, healthcare, and
+                enterprise. From LLM fine-tuning and vector search to MLOps
+                deployment on AWS, Azure, and GCP.
               </p>
             </motion.div>
 
@@ -152,9 +152,8 @@ const HeroSection: React.FC = () => {
                 <span className="text-xs">↗</span>
               </motion.a>
               <motion.a
-                href="/resume.html"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/resume.pdf"
+                download="Yaswitha_Ramisetty_Resume.pdf"
                 whileHover={{ scale: 1.02 }}
                 className="relative inline-flex items-center space-x-2 px-6 sm:px-7 py-3.5 border border-bronze/40 hover:border-gold text-[#0F172A] hover:text-gold text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300"
               >
